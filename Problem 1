@@ -10,7 +10,7 @@ int main(){
 		
 		 
     if(factorial > INT_MAX / i) {
-        printf("Overflow occurred! Factorial cannot be stored in 32-bit integer.\n");
+        printf("Overflow");
         return 0;
 	}
 	
