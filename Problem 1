@@ -9,7 +9,7 @@ int main(){
 	for(i=1 ; i<=n ; i++){
 		
 		 
-    if(factorial > UINT_MAX / i) {
+    if(factorial > INT_MAX / i) {
         printf("Overflow occurred! Factorial cannot be stored in 32-bit integer.\n");
         return 0;
 	}
