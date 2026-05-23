@@ -1,0 +1,40 @@
+#inlcude<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct Patient{
+	int id;
+	char name[30];
+	char treatment_status[50];
+	struct Patient *next;
+};
+
+struct Patient *head = NULL;
+void addPatient() {
+    struct Patient *newPatient;
+    newPatient = (struct Patient*)malloc(sizeof(struct Patient));
+	
+	printf("enter the patient id:");
+	scanf("%d",&newpatient->id);
+	
+	printf("enter the patient name:");
+	scanf("%d",&newpatient->name);
+	
+	printf("enter the treatment status:");
+	scanf("5d",&newpatient->treatment_status);
+	
+	newpatient->next = head;
+	head = newpatient;
+	
+}
+void updateStatus() {
+    int id;
+    char newStatus[30];
+
+    struct Patient *temp = head;
+
+    printf("Enter Patient ID to update: ");
+    scanf("%d", &id); 
+    
+    
+};
